@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 33.33%; 
+  }
+  
+  .slider {
+    display: flex;
+    width: 300%; 
+    transition: transform 0.5s;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  #prev {
+    left: 10px;
+  }
+  
+  #next {
+    right: 10px;
+  }
+  .main {
+    overflow: visible; /* Asegura que no haya un recorte de contenido */
+    position: relative; /* Ajusta la posición para mantener el contenido visible */
+    width: 100%; /* Asegura que el ancho sea 100% del contenedor padre */
+    height: auto; /* Permite que la altura se ajuste según el contenido */
+  }
+  

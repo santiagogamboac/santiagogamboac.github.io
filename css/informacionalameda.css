@@ -1,0 +1,113 @@
+.w-alameda {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #fff;
+    margin: 10px 90px;
+  }
+  .i-alameda {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    /* background: linear-gradient(90deg,#11431d, #59ba46); */
+    background-color: #fff;
+    border: 2px solid #59ba46;
+    /* margin: 10px; */
+  }
+  /* i {
+    color: #18f98f;
+    font-size: 2.5em;
+    text-align: center;
+  } */
+  span.num {
+    color: #11431d;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 2em;
+  }
+  span.text {
+    color: #000;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    .w-alameda {
+      width: 100%;
+    }
+    .i-alameda {
+      flex-direction: column; /* Cambio a dirección de columna */
+    height: auto; /* Eliminar altura fija para permitir contenido dinámico */
+    
+    font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .w-alameda {
+      width: 100%;
+    }
+    .i-alameda {
+      flex-direction: column; /* Cambio a dirección de columna */
+    height: 180px; /* Eliminar altura fija para permitir contenido dinámico */
+    width: 100%; /* Ocupar el ancho completo */
+    font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .w-alameda {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+      height: auto;
+    }
+    .container {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+
+    .i-alameda {display: flex;
+    flex-direction: column;
+    align-items: center;}
+  }
+  @media screen and (max-width: 768px) {
+    .w-alameda {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .container {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+
+    .i-alameda {
+      height: auto;
+      width: 100%;
+      font-size: 16px;
+      display: flex; /* Usar flexbox para centrar contenido en la celda del grid */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    }
+
+
+  

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: auto;
+    background: url('https://minnd.com.co/wp-content/uploads/2018/11/alameda-de-san-diego-x1.png') no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    /* margin-bottom: 50px; */
+}
+.service-wrapper{
+    padding: 3% 4%;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    width: 100%;
+    height: auto;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    margin-bottom: 15px;
+}
+h1{
+    color: #333;
+    font-size: 3rem;
+}
+p{
+    color:#000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-top: 42px;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 3% 8%;
+    border-radius: 8px;
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.card i{
+    color: #2b682c;
+    /* color: #fff; */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.usuario{
+    fill: #2b682c;
+    width: 3.5rem;
+    margin: 10px;
+    
+}
+
+.card:hover .usuario {
+    fill: #fff;
+}
+
+.icon-svg {
+    width: 50px; /* Establece el ancho del ícono en 32 píxeles */
+    height: 50px; /* Establece la altura del ícono en 32 píxeles */
+}
+
+.card h2{
+    color: #11431d;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 700;
+    text-align: center;
+}
+.card p{
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+}
+.card:hover{
+background: linear-gradient(90deg,#11431d, #59ba46);
+transform: translateY(-8px);
+}
+
+.card:hover i{
+    color: #fff;
+}
+.card:hover h2{
+    color: #fff;
+}
+
+  .card .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px 30px; 
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #11431d 0%, #59ba46 100% );
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .cards:hover::before {
+    height: 100%;
+  }
+  
+  .cards:hover {
+    box-shadow: none;
+  }
+  
+  .cards:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+  
+  .card .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+  }
+  
+  .card .btn:active {
+    box-shadow: none;
+  }
+
+  @media (max-width:1200px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+@media (max-width:900px) {
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:768px) {
+    .h1{
+        font-size: 2rem;
+    } 
+    .p{
+        width: 90%;
+    }
+}
+
+@media (max-width:500px) {
+    .card{
+        height: 200px;
+        width: 200px;
+    }
+    .card i{
+        margin-top: 20px;
+    }
+    h1{
+        margin-bottom: 12px;
+        font-size: 1.5rem;
+    }
+    p{
+        width: 100%;
+
+    }
+}
